@@ -4,31 +4,31 @@ const BASE_URL = import.meta.env.VITE_API_URL;
 function HeroSection() {
   // Download CV logic
 
-  const downloadCv = async () => {
-    try {
-      const response = await fetch(`${BASE_URL}/api/cv/download`, {
-        responseType: "blob",
-      });
-      const fileURL = URL.createObjectURL(await response.blob());
-      const link = document.createElement("a");
-      link.href = fileURL;
-      link.download = "vishnunarayancv.pdf";
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
+  // const downloadCv = async () => {
+  //   try {
+  //     const response = await fetch(`${BASE_URL}/api/cv/download`, {
+  //       responseType: "blob",
+  //     });
+  //     const fileURL = URL.createObjectURL(await response.blob());
+  //     const link = document.createElement("a");
+  //     link.href = fileURL;
+  //     link.download = "vishnunarayancv.pdf";
+  //     document.body.appendChild(link);
+  //     link.click();
+  //     document.body.removeChild(link);
 
-      URL.revokeObjectURL(fileURL);
-      if (!response.ok) {
-        toast.error("Cv Download Failed");
-        console.error("Cv Download Failed");
-      } else {
-        toast.success("File Downloaded Successfully");
-      }
-    } catch (error) {
-      toast.error(error);
-      console.error("Something went wrong", error);
-    }
-  };
+  //     URL.revokeObjectURL(fileURL);
+  //     if (!response.ok) {
+  //       toast.error("Cv Download Failed");
+  //       console.error("Cv Download Failed");
+  //     } else {
+  //       toast.success("File Downloaded Successfully");
+  //     }
+  //   } catch (error) {
+  //     toast.error(error);
+  //     console.error("Something went wrong", error);
+  //   }
+  // };
   return (
     <>
       <section id="hero" className="text-textprimary container mt-30">
@@ -62,9 +62,11 @@ function HeroSection() {
 
             <div className="flex flex-col items-center sm:flex-row mt-10 xl:justify-start justify-center gap-10 opacity-0 animate-fade-in-delay-5 ">
               {/* <a href=""> */}
-              <button className="cv-btn cursor-pointer" onClick={downloadCv}>
-                Download CV
-              </button>
+              <a href="/vishnunarayancv.pdf" download={"vishnunarayancv.pdf"}>
+                <button className="cv-btn cursor-pointer">
+                  Download CV
+                </button>
+              </a>
               <a href="/projects">
                 <button className="x-btn cursor-pointer">See Projects</button>
               </a>
