@@ -62,7 +62,7 @@ function HeroSection() {
 
             <div className="flex flex-col items-center sm:flex-row mt-10 xl:justify-start justify-center gap-10 opacity-0 animate-fade-in-delay-5 ">
               {/* <a href=""> */}
-              <a href="/vishnunarayancv.pdf" download={"vishnunarayancv.pdf"}>
+              <a href="https://drive.google.com/uc?export=download&id=1YrHXEeMO3ZcwMRHD37S1viskF3Abi30L" target="_blank">
                 <button className="cv-btn cursor-pointer">
                   Download CV
                 </button>
