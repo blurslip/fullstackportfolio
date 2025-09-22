@@ -6,13 +6,13 @@ function EducationCard({ showDeleteBtn = true }) {
   //*************Sample Data*************
   const educations = [
     {
-      education: "College Of Applied Science, Periserry",
+      education: "IHRD College Of Applied Science, Perissery",
       description: "B.Sc. Computer Science",
       fromDate: "Aug 2022",
       toDate: "Sep 2025",
     },
     {
-      education: "Qspiders",
+      education: "QSpiders, Kochi",
       description: "Java Full Stack Development (Training + Internship)",
       fromDate: "June 2025",
       toDate: "Oct 2025 (Ongoing)",
