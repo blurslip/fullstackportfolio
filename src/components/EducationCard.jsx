@@ -7,15 +7,15 @@ function EducationCard({ showDeleteBtn = true }) {
   const educations = [
     {
       education: "College Of Applied Science, Periserry",
-      description: "BSC Computer Science",
+      description: "B.Sc. Computer Science",
       fromDate: "Aug 2022",
       toDate: "Sep 2025",
     },
     {
       education: "Qspiders",
-      description: "Java Full Stack Development",
+      description: "Java Full Stack Development (Training + Internship)",
       fromDate: "June 2025",
-      toDate: "Oct 2025",
+      toDate: "Oct 2025 (Ongoing)",
     },
   ];
   // const [educations, setEducations] = useState([]);

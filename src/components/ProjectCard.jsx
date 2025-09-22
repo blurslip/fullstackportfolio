@@ -9,7 +9,8 @@ export function ProjectCard({ editMode }) {
   const projects = [
     {
       title: "Gesture Controlled Virtual Machine",
-      description: "Controlled a virtual mouse entirely through hand gestures.",
+      description:
+        "A touchless virtual mouse built with Python, OpenCV, and MediaPipe, enabling real-time gesture-based controls like click, scroll, and drag. Designed to improve accessibility and user interaction by focusing on accuracy and low latency.",
       imageUrl: "/gcvmimg.png",
       tags: ["Python", "MediaPipe", "OpenCV"],
       demoUrl: "dfa",
@@ -17,7 +18,8 @@ export function ProjectCard({ editMode }) {
     },
     {
       title: "DreamCode",
-      description: "streamlined academic project management with an intuitive user interface.",
+      description:
+        "A web-based platform to streamline academic project management. I developed the frontend in React, creating responsive dashboards, forms, and navigation. Collaborated with backend developers to integrate Django + MySQL APIs for seamless data handling.",
       imageUrl: "/dremcodeimg.png",
       tags: ["React", "Tailwind CSS", "Django", "MySQl"],
       demoUrl: "dfa",
@@ -25,9 +27,16 @@ export function ProjectCard({ editMode }) {
     },
     {
       title: "Portfolio Website",
-      description: "Showcased projects and achievements with a dynamic, secure dashboard.",
+      description:
+        "My personal portfolio website showcasing projects and achievements. Features a React + TailwindCSS frontend and a Spring Boot backend with PostgreSQL. Includes Spring Security authentication and an admin panel for managing uploads and content",
       imageUrl: "/portfolio.png",
-      tags: ["React", "Tailwind CSS", "Spring Boot", "Spring Security", "PostgreSQL"],
+      tags: [
+        "React",
+        "Tailwind CSS",
+        "Spring Boot",
+        "Spring Security",
+        "PostgreSQL",
+      ],
       demoUrl: "/",
       githubUrl: "https://github.com/blurslip/portfolioFullstack",
     },
