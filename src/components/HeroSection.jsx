@@ -66,7 +66,7 @@ function HeroSection() {
                 href="https://drive.google.com/file/d/1ZmRQ5dI5Nn6CzcQ1OnaAclNDp3T3qKX_/view?usp=sharing"
                 target="_blank"
               >
-                <button className="cv-btn cursor-pointer">Download CV</button>
+                <button className="cv-btn cursor-pointer">View CV</button>
               </a>
               <a href="/projects">
                 <button className="x-btn cursor-pointer">See Projects</button>
